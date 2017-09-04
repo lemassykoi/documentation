@@ -6,7 +6,7 @@ Before a Raspberry Pi will network boot, it needs to be booted from an SD card w
 
 Install Raspbian Lite (or Raspbian with PIXEL) on the SD card in the normal way [See here](../../../installation/installing-images/README.md). 
 
-### Program USB Boot Mode
+### Program USB Boot Mode (you MUST have the 4.4.50 kernel minimum, otherwise the OTP will not program)
 First, prepare the `/boot` directory with the latest boot files:
 ```bash
 sudo apt-get update && sudo apt-get upgrade
